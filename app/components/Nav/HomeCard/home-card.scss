@@ -1,0 +1,58 @@
+.home-card {
+  width: 100%;
+  max-width: 335px;
+  padding: 12px 25px;
+  background-color: transparent;
+  background-color: #718093;
+  border-radius: 20px;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    
+    &::before {
+      display: block;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    color: #fff;
+  }
+}
+
+.home-card:nth-child(1) {
+  background-color: transparent;
+  background-color: #718093;
+
+  h3::before {
+    width: 24px;
+    height: 24px;
+    background-image: url('../../../../public/code.svg');
+    content: '';
+  }
+}
+
+.home-card:nth-child(2) {
+  h3 {
+    line-height: 40px;
+
+    &::before {
+      width: 30px;
+      height: 24px;
+      background-image: url('../../../../public/mentorship.svg');
+      content: '';
+    }
+  }
+}
